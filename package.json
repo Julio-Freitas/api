@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"npm run-script build"
+    "build": "npm run-script build"
   },
   "dependencies": {
     "connect-redis": "^4.0.2",
