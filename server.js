@@ -4,12 +4,14 @@ const path = require('path');
 const bodyParse = require('body-parser');
 const cors = require('cors');
 
+
 const server = express();
 
-const port = process.env.PORT || 3333 ;
+const port = process.env.PORT || 3000 ;
 
 server.use(express.static(path.join(__dirname, 'public')));
 server.use(bodyParse.urlencoded({extended: true}));
+
 
 server.use(express.json());
 server.use(cors()); //permite que a app seja acessada por qualquer endereço
